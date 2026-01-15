@@ -1,0 +1,8 @@
+{
+  "/messages": {
+    "target": "http://localhost:9002",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
