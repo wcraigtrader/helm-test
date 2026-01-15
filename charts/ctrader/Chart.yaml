@@ -1,0 +1,14 @@
+apiVersion: v2
+name: ctrader
+description: Umbrella chart for reader and writer services
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+
+dependencies:
+  - name: reader
+    version: 0.1.0
+    repository: "file://../reader"
+  - name: writer
+    version: 0.1.0
+    repository: "file://../writer"
