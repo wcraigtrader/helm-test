@@ -10,4 +10,6 @@ npm install
 npm run dev
 ```
 
-The Vite config proxies `/messages` to `http://localhost:8080` for local development. Ensure the `reader` service is running on port 8080.
+The Vite config proxies `/messages` to `http://localhost:9002` for local development. The dev server runs on port `9000`.
+
+Ensure the `reader` service is running on port `9002` (or adjust `webapp/vite.config.js` accordingly).

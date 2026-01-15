@@ -4,11 +4,11 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   server: {
-    port: 5173,
+    port: 9000,
     proxy: {
-      // forward API calls to local reader Spring Boot
+      // forward API calls to local reader service running on port 9002
       '/messages': {
-        target: 'http://localhost:8080',
+        target: 'http://localhost:9002',
         changeOrigin: true,
         secure: false
       }
