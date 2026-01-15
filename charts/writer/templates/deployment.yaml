@@ -24,6 +24,16 @@ spec:
           ports:
             - containerPort: {{ .Values.service.port }}
           env:
+            - name: SPRING_RABBITMQ_HOST
+              value: {{ .Values.rabbitmq.host | quote }}
+            - name: SPRING_RABBITMQ_PORT
+              value: "{{ .Values.rabbitmq.port }}"
+            - name: SPRING_RABBITMQ_USERNAME
+              value: {{ .Values.rabbitmq.username | quote }}
+            - name: SPRING_RABBITMQ_PASSWORD
+              value: {{ .Values.rabbitmq.password | quote }}
+            - name: RABBITMQ_QUEUE
+              value: {{ .Values.rabbitmq.queue | quote }}
 {{- if .Values.env }}
 {{ toYaml .Values.env | indent 12 }}
 {{- end }}
