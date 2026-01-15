@@ -1,0 +1,8 @@
+/home/ctrader/training/helm-test/reader/src/main/java/com/blacksky/ctrader/reader/service/MessageService.java
+/home/ctrader/training/helm-test/reader/src/main/java/com/blacksky/helmtest/reader/config/RabbitConfig.java
+/home/ctrader/training/helm-test/reader/src/main/java/com/blacksky/ctrader/reader/ReaderApplication.java
+/home/ctrader/training/helm-test/reader/src/main/java/com/blacksky/helmtest/reader/ReaderApplication.java
+/home/ctrader/training/helm-test/reader/src/main/java/com/blacksky/ctrader/reader/config/RabbitConfig.java
+/home/ctrader/training/helm-test/reader/src/main/java/com/blacksky/helmtest/reader/service/MessageService.java
+/home/ctrader/training/helm-test/reader/src/main/java/com/blacksky/helmtest/reader/controller/MessageController.java
+/home/ctrader/training/helm-test/reader/src/main/java/com/blacksky/ctrader/reader/controller/MessageController.java

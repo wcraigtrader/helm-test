@@ -8,15 +8,15 @@ replicaCount: 1
 
 service:
   type: ClusterIP
-  port: 8080
+  port: 9002
 
 resources: {}
 
 rabbitmq:
   host: rabbitmq
   port: 5672
-  username: guest
-  password: guest
+  username: user
+  password: "queuemunicate"
   queue: messages
 
 env: []
