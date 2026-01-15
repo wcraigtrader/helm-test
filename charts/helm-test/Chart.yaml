@@ -2,15 +2,15 @@ apiVersion: v2
 name: "helm-test"
 description: Umbrella chart for reader and writer services
 type: application
-version: 0.1.0
-appVersion: "0.1.0"
+version: 0.2.0
+appVersion: "0.2.0"
 
 dependencies:
   - name: reader
-    version: 0.1.0
+    version: 0.2.0
     repository: "file://../reader"
   - name: writer
-    version: 0.1.0
+    version: 0.2.0
     repository: "file://../writer"
   - name: rabbitmq
     version: ">=10.0.0"
