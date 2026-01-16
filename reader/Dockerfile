@@ -4,16 +4,16 @@
 FROM maven:3.9.4-eclipse-temurin-21 AS build
 WORKDIR /workspace
 # Copy root pom so multi-module builds work
-COPY pom.xml ./
+COPY ./pom.xml ./
 
 # Build and install the common module into the container-local Maven repo
-COPY common/pom.xml ./common/pom.xml
-COPY common/src ./common/src
+COPY ./common/pom.xml ./common/pom.xml
+COPY ./common/src ./common/src
 RUN mvn -B -DskipTests -f common/pom.xml install
 
 # Build the reader module (will use the installed common artifact)
-COPY reader/pom.xml ./reader/pom.xml
-COPY reader/src ./reader/src
+COPY ./reader/pom.xml ./reader/pom.xml
+COPY ./reader/src ./reader/src
 RUN mvn -B -DskipTests -f reader/pom.xml package
 
 ## Run Stage
