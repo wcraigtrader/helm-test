@@ -1,4 +1,4 @@
-package com.blacksky.ctrader.common.dto;
+package com.blacksky.helmtest.common.dto;
 
 import org.junit.jupiter.api.Test;
 

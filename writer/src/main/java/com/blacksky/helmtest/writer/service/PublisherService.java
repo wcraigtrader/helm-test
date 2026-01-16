@@ -15,7 +15,7 @@ public class PublisherService {
     private final String hostname;
 
     public PublisherService(RabbitTemplate rabbitTemplate,
-                            @Value("${ctrader.queue:ctrader.queue}") String queue,
+                            @Value("${helmtest.queue:helmtest.queue}") String queue,
                             @Value("${app.version:0.1.0}") String version,
                             @Value("${HOSTNAME:${COMPUTERNAME:unknown}}") String hostname) {
         this.rabbitTemplate = rabbitTemplate;

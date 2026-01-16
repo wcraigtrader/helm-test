@@ -18,7 +18,7 @@ public class MessageService {
     private final ReentrantLock lock = new ReentrantLock();
     private static final int MAX = 100;
 
-    @RabbitListener(queues = "${ctrader.queue:ctrader.queue}")
+    @RabbitListener(queues = "${helmtest.queue:helmtest.queue}")
     public void receive(MessageDTO msg) {
         if (msg == null) {
             return;

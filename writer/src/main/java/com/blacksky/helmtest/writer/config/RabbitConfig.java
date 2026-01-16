@@ -9,8 +9,8 @@ import org.springframework.core.env.Environment;
 @Configuration
 public class RabbitConfig {
     @Bean
-    public Queue ctraderQueue(Environment env) {
-        String q = env.getProperty("ctrader.queue", "ctrader.queue");
+    public Queue helmtestQueue(Environment env) {
+        String q = env.getProperty("helmtest.queue", "helmtest.queue");
         return new Queue(q, true);
     }
 

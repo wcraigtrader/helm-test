@@ -1,4 +1,4 @@
-# Default values for ctrader umbrella chart
+# Default values for helmtest umbrella chart
 
 reader:
   image:

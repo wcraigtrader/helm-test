@@ -1,6 +1,6 @@
-package com.blacksky.ctrader.writer.service;
+package com.blacksky.helmtest.writer.service;
 
-import com.blacksky.ctrader.writer.dto.MessageDTO;
+import com.blacksky.helmtest.writer.dto.MessageDTO;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

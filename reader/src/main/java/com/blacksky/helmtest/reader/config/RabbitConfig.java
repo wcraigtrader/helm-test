@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitConfig {
 
     @Bean
-    public Queue ctraderQueue(org.springframework.core.env.Environment env) {
-        String q = env.getProperty("ctrader.queue", "ctrader.queue");
+    public Queue helmtestQueue(org.springframework.core.env.Environment env) {
+        String q = env.getProperty("helmtest.queue", "helmtest.queue");
         return new Queue(q, true);
     }
 
