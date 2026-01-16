@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: reader-summary-webapp
+  repository: ghcr.io/wcraigtrader/webapp
   tag: "latest"
   pullPolicy: IfNotPresent
 

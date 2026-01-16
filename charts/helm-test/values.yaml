@@ -10,6 +10,12 @@ writer:
     repository: ghcr.io/wcraigtrader/writer
     tag: latest
 
+# Webapp image override to use GHCR
+webapp:
+  image:
+    repository: ghcr.io/wcraigtrader/webapp
+    tag: latest
+
 # Common RabbitMQ settings can be set here and passed through to subcharts
 rabbitmq:
   host: rabbitmq
