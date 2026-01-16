@@ -1,12 +1,15 @@
 dependencies:
 - name: reader
   repository: file://../reader
-  version: 0.1.0
+  version: 0.2.0
 - name: writer
   repository: file://../writer
+  version: 0.2.0
+- name: webapp
+  repository: file://../webapp
   version: 0.1.0
 - name: rabbitmq
   repository: https://charts.bitnami.com/bitnami
   version: 16.0.14
-digest: sha256:59ecaf5c71c0bad7b83e6c762365debb0570915c5a07d7ed36789a89dd2ad18a
-generated: "2026-01-15T06:19:23.779822268-05:00"
+digest: sha256:53122dee0e1404fb0342fb77637a509a0117185740f50e1bab92961e8409693a
+generated: "2026-01-15T12:21:10.055118789-05:00"

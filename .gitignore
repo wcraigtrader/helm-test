@@ -49,3 +49,9 @@ Thumbs.db
 .env.local
 
 .vscode
+
+# Node modules for webapp
+webapp/node_modules/
+
+# Reports
+**/surefire-reports/

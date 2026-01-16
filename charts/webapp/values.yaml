@@ -1,0 +1,15 @@
+replicaCount: 1
+
+image:
+  repository: reader-summary-webapp
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+containerPort: 3000
+
+env:
+  READER_URL: "http://reader:9002/messages"

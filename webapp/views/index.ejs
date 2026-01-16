@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reader Messages Summary</title>
+  <style>
+    body{font-family: Arial, Helvetica, sans-serif; margin:20px}
+    .version{margin-bottom:18px}
+    .host{margin-left:18px}
+    pre { background:#f5f5f5; padding:8px }
+  </style>
+</head>
+<body>
+  <h1>Reader Messages Summary</h1>
+  <p><strong>Total messages:</strong> <%= total %></p>
+  <p><strong>Reader URL:</strong> <%= readerUrl %></p>
+
+  <% if (!summary || Object.keys(summary).length === 0) { %>
+    <p>No messages found.</p>
+  <% } else { %>
+    <% Object.keys(summary).forEach(function(version){ %>
+      <div class="version">
+        <h2>Version: <%= version %></h2>
+        <% const hosts = summary[version]; %>
+        <% Object.keys(hosts).forEach(function(host){ %>
+          <div class="host">
+            <h3>Host: <%= host %> — <%= hosts[host].count %> messages</h3>
+            <details>
+              <summary>Sample messages (up to 5)</summary>
+              <% hosts[host].samples.forEach(function(s){ %>
+                <pre><%= JSON.stringify(s, null, 2) %></pre>
+              <% }) %>
+            </details>
+          </div>
+        <% }) %>
+      </div>
+    <% }) %>
+  <% } %>
+</body>
+</html>
