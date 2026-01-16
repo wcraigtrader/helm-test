@@ -55,4 +55,4 @@ webapp/node_modules/
 
 # Reports
 **/surefire-reports/
-# **/*.lst
+**/*.lst
